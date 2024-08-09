@@ -1,0 +1,114 @@
+.nav_bar{
+    width:100%;
+    height:80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    position: fixed;
+    top: 0;
+    transition: all .3s;
+}
+.nav_bar.active_bg{
+    background-color: #3175ad;
+}
+
+.nav_bar >ul{
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    list-style: none;
+    gap: 1rem;
+}
+.nav_bar >ul>li{
+    min-width: fit-content;
+    flex: 1;
+}
+.nav_bar>ul>li>a{
+    display: block;
+    text-align: center;
+    padding:1rem;
+    border: solid 1px #fff;
+    transition: all .3s;
+    border-radius: .5rem;
+
+}
+
+.nav_bar>ul>li>a:hover{
+    background-color: #fff;
+    color: #706f6f;
+}
+
+.logo_container{
+    width: 70px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid #fff 1px;
+}
+.logo_container>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Header */
+
+.header{
+    width: 100%;
+    height:100vh;
+    background-color: #706f6f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header_image{
+    width:400px;
+    height:400px;
+    background-color: #3175ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #fff double 1px;
+}
+
+
+
+
+.heading_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:1rem;
+    gap: 1rem;
+}
+.heading_text>h1{
+    font-size: 2rem;
+    color: #fff;
+    offset: unset;
+    font-family: monospace;
+}
+.heading_text>h3{
+    font-size: 1rem;
+    color: #fff;
+    offset: unset;
+    font-family: monospace;
+}
+.heading_text>p{
+    font-size: .7rem;
+    color: #fff;
+    offset: unset;
+    font-family: monospace;
+}
